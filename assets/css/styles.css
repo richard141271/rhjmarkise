@@ -23,8 +23,19 @@ body{
 }
 
 }
-.site-brand{display:flex;align-items:center;gap:18px;max-width:var(--max-width);margin:0 auto}
-.logo{width:110px;height:auto}
+.site-brand{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+
+.logo{
+  width:320px;   /* ca 3x så stor */
+  height:auto;
+}
+
 .brand-text h1{margin:0;font-size:34px;letter-spacing:1px}
 .tagline{margin:0;font-size:14px;opacity:.95}
 .main-nav{display:flex;gap:16px;justify-content:flex-end;align-items:center;padding:8px 24px;background:rgba(255,255,255,0.06)}
