@@ -41,3 +41,14 @@ Repoet påvirker ikke epost, men DNS må være korrekt satt:
 
 ## Kontakt
 Epost brukt på nettsiden: `post@rhjmarkise.no`
+
+# RHJMarkise.no
+
+Minimal, modulær nettside for RHJ AS. Legg til bilder i `assets/img/`. Deploy til GitHub Pages ved å pushe til `main` (eller bruk Netlify / Vercel).
+
+Setup:
+1. Legg logo i assets/img/rhj-logo.png
+2. Bestem kontakthåndtering: Formspree eller Netlify Forms
+3. Pusha til GitHub, gå til Settings → Pages, velg branch `main`, / (root).
+
+Komme i gang: rediger innhold i index.html, about.html, services.html, prices.html, gallery.html, contact.html.
