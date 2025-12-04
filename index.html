@@ -1,48 +1,69 @@
-/* header / logo */
-.site-header{background:#f8fafc;border-bottom:1px solid rgba(15,23,36,0.04)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:0 auto;padding:12px 20px}
-.brand{display:flex;align-items:center;text-decoration:none}
-.logo-img{height:56px;width:auto;display:block}
-/* tekst ved siden av logo (skjult på små skjermer) */
-.org-text{display:none;margin-left:12px;font-weight:600;color:#0f1720}
-/* meny */
-.main-nav a{margin-left:18px;color:#6b7280;text-decoration:none;font-size:15px}
-
-/* RESPONSIVE */
-@media (max-width:880px){
-  .logo-img{height:48px}
-  .main-nav a{margin-left:10px;font-size:14px}
-}
-@media (max-width:640px){
-  .logo-img{height:38px}          /* gjør logo mindre på mobil */
-  .org-text{display:none}
-  .main-nav{display:none}         /* enkel mobil-løsning (vi kan legge til hamburger senere) */
-}
-/* på store skjermer vises org-text */
-@media (min-width:641px){
-  .org-text{display:inline-block;font-size:18px}
-}
-
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="brand">
-      <picture>
-        <!-- Mobil: ikon (vises når skjermbredde <= 640px) -->
-        <source srcset="assets/logo-icon.jpg" media="(max-width:640px)">
-        <!-- Desktop / tablet: horisontal logo (default) -->
-        <img src="assets/logo-horizontal.jpg"
-             alt="RHJ Norge AS — Kalesjer og markiser"
-             class="logo-img">
-      </picture>
-      <!-- valgfri kort tekst (vises kun på større skjermer) -->
-      <span class="org-text">RHJ Norge AS</span>
-    </a>
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RHJ AS — Kalesjer og Markiser</title>
+  <meta name="description" content="RHJ AS — kalesjer, markiser, rens og montering. Lokalt håndverk fra Tistedal." />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-brand">
+      <img src="assets/img/rhj-logo.png" alt="RHJ AS logo" class="logo"/>
+      <div class="brand-text">
+        <h1>RHJ AS</h1>
+        <p class="tagline">Kalesjer og Markiser — kvalitet og service</p>
+      </div>
+    </div>
 
     <nav class="main-nav" aria-label="Hovedmeny">
       <a href="index.html">Hjem</a>
-      <a href="omoss.html">Om oss</a>
-      <a href="kontakt.html">Kontakt oss</a>
-      <a href="bilder.html">Bilder</a>
+      <a href="about.html">Om oss</a>
+      <a href="services.html">Tjenester</a>
+      <a href="prices.html">Priser</a>
+      <a href="gallery.html">Bilder</a>
+      <a href="contact.html" class="cta">Kontakt oss</a>
     </nav>
-  </div>
-</header>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Velkommen til RHJ AS</h2>
+      <p>Vi leverer kalesjer, markiser og rens/impregnering. Lokal produksjon, 100% håndverk.</p>
+      <p><a class="button" href="services.html">Se våre tjenester</a></p>
+    </section>
+
+    <section class="feature-grid">
+      <article>
+        <h3>Kalesjer</h3>
+        <p>Søm, modifikasjoner og reparasjoner for alle typer båter.</p>
+      </article>
+      <article>
+        <h3>Markiser</h3>
+        <p>Skreddersydde markiser — stoff, motorisering og montering.</p>
+      </article>
+      <article>
+        <h3>Rens & impregnering</h3>
+        <p>Profesjonell rens av puter, tepper og kalesjer. Hjemmebesøk etter avtale.</p>
+      </article>
+    </section>
+
+    <section class="callout">
+      <h3>Kampanje nå</h3>
+      <p>Bestill markiser eller rens innen <strong>01.05.2022</strong> og få 50% rabatt ved forskuddsbetaling.</p>
+      <p>Kontakt: <a href="mailto:kampanje@rhjmarkiser.no">kampanje@rhjmarkiser.no</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© RHJ AS — Kalesjer og Markiser — Rascheprangen 1, 1767 Halden</p>
+      <p><a href="contact.html">Kontakt</a> · <a href="privacy.html">Personvern</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
