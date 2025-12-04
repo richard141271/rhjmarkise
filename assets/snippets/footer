@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>Copyright© 1987–2025 A-gruppen – med enerett.</p>
+    <p>
+      <a href="contact.html">Kontakt</a> ·
+      <a href="privacy.html">Personvern</a>
+    </p>
+  </div>
+</footer>
